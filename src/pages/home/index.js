@@ -2,6 +2,7 @@ import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
+import Menu from '../../components/Menu'
 
 
 const Home = () => {
@@ -21,8 +22,7 @@ const Home = () => {
             <View>
                 <View style={styles.container}>
                     <View style={styles.menu}>
-                        <Image style={styles.img} />
-                        <Text style={styles.title}>SteelBack</Text>
+                         <Menu />
                     </View>
                 </View>
             </View>
@@ -41,6 +41,7 @@ const styles = StyleSheet.create({
 
     menu: {
         flex: 1,
+        marginTop: 40,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#e48040',
