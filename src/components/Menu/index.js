@@ -6,6 +6,7 @@ import { styles } from './styles';
 
 const Menu = () => {
 
+const navigation = useNavigation();
 
   return (
   <View style={styles.container} >
