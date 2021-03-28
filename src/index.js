@@ -1,27 +1,30 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
-import Menu from './components/Menu';
+import React from 'react';
+import { StatusBar } from 'react-native';
+import  AppLoading  from 'expo-app-loading';
 
-const Home = () => {
-    return (
-        <>
-        <Menu />
-        <View style={styles.container}>
-            <Text>Home</Text>
-          <StatusBar style="auto" />
-        </View>
-        </>
-      );
-}
 
-export default Home
+import {Roboto_400Regular, Roboto_500Medium } from '@expo-google-fonts/roboto';
+import { Ubuntu_700Bold, useFonts } from '@expo-google-fonts/ubuntu';
 
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-});
+
+import Routes from './routes';
+
+export default function App() {
+
+  const [fontsLoaded] = useFonts({
+    Roboto_500Medium,
+    Roboto_400Regular,
+    Ubuntu_700Bold
+  });
+  
+  if(!fontsLoaded){
+    return <AppLoading />
+  };
+
+  return (
+    <>
+      <StatusBar barStyle="dark-content" backgroundColor="transparent" translucent/>
+      <Routes />
+    </>
+  )
+};

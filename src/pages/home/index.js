@@ -18,9 +18,9 @@ const Home = () => {
 
   return (
     <>
-      <ImageBackground source={require('../../assets/home-background.png')} style={styles.container} imageStyle={{ width: 274, height: 368, opacity: .05 }}>
+      <ImageBackground  style={styles.container} imageStyle={{ width: 274, height: 368, opacity: .05 }}>
         <View style={styles.main}>
-          <Image source={require('../../assets/icon.png')} style={styles.img} />
+          <Image style={styles.img} />
           <Text style={styles.title}>SteelBack</Text>
         </View>
 

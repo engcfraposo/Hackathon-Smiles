@@ -15,7 +15,7 @@ const AppStack = createStackNavigator();
 
 const Routes = () =>{
     return (
-        <NavigationContainer>
+        <NavigationContainer independent={true}>
             <AppStack.Navigator 
                 headerMode="none"
                 screenOptions={{
