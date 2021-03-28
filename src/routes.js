@@ -2,9 +2,10 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { createStackNavigator } from '@react-navigation/stack';
+//import { createStackNavigator } from '@react-navigation/stack';
 
-import Home from './pages/home';
+import Presentation from './pages/presentation';
+import StartingSearch from './pages/startingSearch';
 // import Register from './pages/register';
 // import Points from './pages/points';
 // import Detail from './pages/detail';
@@ -36,7 +37,8 @@ const Routes = () =>{
 */}   
 
             <Drawer.Navigator initialRouteName="Home">
-                <Drawer.Screen name="Home" component={Home} />
+                <Drawer.Screen name="Presentation" component={Presentation} />
+                <Drawer.Screen name="StartingSearch" component={StartingSearch} />
             </Drawer.Navigator>
         </NavigationContainer>
     )
