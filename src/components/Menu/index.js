@@ -6,7 +6,8 @@ const Menu = () => {
   return (
   <View style={styles.container} >
     <View style={styles.menu}>
-      
+      <Image styles={styles.textContainer} src={'../../assets/home_-_chat_expandido_6 (1).png'}/>
+      <Image styles={styles.textContainer} src={'../../assets/home_-_chat_expandido_6 (2).png'}/>
     </View>
   </View>
     )
