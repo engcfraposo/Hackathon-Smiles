@@ -39,7 +39,6 @@ const Routes = () =>{
             <Drawer.Navigator initialRouteName="Home">
                 <Drawer.Screen name="Presentation" component={Presentation} />
                 <Drawer.Screen name="StartingSearch" component={StartingSearch} />
-                <Drawer.Screen name="Preferencias" component={Home} />
             </Drawer.Navigator>
 
         </NavigationContainer>
