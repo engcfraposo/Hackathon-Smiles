@@ -1,13 +1,17 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import Menu from './components/Menu';
 
 const Home = () => {
     return (
+        <>
+        <Menu />
         <View style={styles.container}>
-          <Text>Open up App.js to start working on your app!</Text>
+            <Text>Home</Text>
           <StatusBar style="auto" />
         </View>
+        </>
       );
 }
 
