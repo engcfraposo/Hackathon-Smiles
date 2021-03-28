@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from './pages/home';
@@ -12,6 +13,7 @@ import Home from './pages/home';
 // import Cupons from './pages/cupons';
 
 const AppStack = createStackNavigator();
+const DrawerStack = createDrawerNavigator();
 
 const Routes = () =>{
     return (
