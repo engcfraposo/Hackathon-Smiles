@@ -35,8 +35,8 @@ const Routes = () =>{
 </AppStack.Navigator> 
 */}   
 
-            <Drawer.Navigator initialRouteName="Home">
-                <Drawer.Screen name="Home" component={Home} />
+            <Drawer.Navigator initialRouteName="Preferencias">
+                <Drawer.Screen name="Preferencias" component={Home} />
             </Drawer.Navigator>
         </NavigationContainer>
     )
