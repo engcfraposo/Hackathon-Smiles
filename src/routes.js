@@ -25,12 +25,6 @@ const Routes = () =>{
                 }}
              >
                 <AppStack.Screen name="Home" component={Home}/>
-                {/* <AppStack.Screen name="Register" component={Register}/>
-                <AppStack.Screen name="Points" component={Points}/>
-                <AppStack.Screen name="Detail" component={Detail}/>
-                <AppStack.Screen name="ReadyToGo" component={ReadyToGo}/>
-                <AppStack.Screen name="Map" component={Maps}/>
-                <AppStack.Screen name="Cupons" component={Cupons}/> */}
             </AppStack.Navigator>
         </NavigationContainer>
     )
