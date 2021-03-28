@@ -18,7 +18,7 @@ const DrawerStack = createDrawerNavigator();
 const Routes = () =>{
     return (
         <NavigationContainer independent={true}>
-            <AppStack.Navigator 
+{/**       <AppStack.Navigator 
                 headerMode="none"
                 screenOptions={{
                     cardStyle:{
@@ -32,8 +32,13 @@ const Routes = () =>{
                 <AppStack.Screen name="Detail" component={Detail}/>
                 <AppStack.Screen name="ReadyToGo" component={ReadyToGo}/>
                 <AppStack.Screen name="Map" component={Maps}/>
-                <AppStack.Screen name="Cupons" component={Cupons}/> */}
-            </AppStack.Navigator>
+                <AppStack.Screen name="Cupons" component={Cupons}/> 
+</AppStack.Navigator> 
+*/}   
+
+            <Drawer.Navigator initialRouteName="Home">
+                <Drawer.Screen name="Home" component={Home} />
+            </Drawer.Navigator>
         </NavigationContainer>
     )
 }
