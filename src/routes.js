@@ -2,10 +2,11 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-//import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import Presentation from './pages/presentation';
 import StartingSearch from './pages/startingSearch';
+import Home from './pages/home'
 // import Register from './pages/register';
 // import Points from './pages/points';
 // import Detail from './pages/detail';
@@ -14,29 +15,45 @@ import StartingSearch from './pages/startingSearch';
 // import Cupons from './pages/cupons';
 
 const Drawer = createDrawerNavigator();
+const Stack = createStackNavigator();
+
+
+const Screen1 = () => {
+    return(
+            
+        <Drawer.Navigator initialRouteName="Home">
+    
+        <Drawer.Screen name="Home" component={Home} />
+        <Drawer.Screen name="Presentation" component={Presentation} />
+        <Stack.Screen name="StartingSearch" component={StartingSearch} />
+        
+        </Drawer.Navigator>
+    )
+    
+}
+
 
 const Routes = () =>{
     return (
+
         <NavigationContainer independent={true}>
-     <AppStack.Navigator 
+        
+        <Stack.Navigator
+                initialRouteName="StartingSearch"
                 headerMode="none"
                 screenOptions={{
                     cardStyle:{
                         backgroundColor:'#f0f0f5'
                     }
                 }}
-             >
-                <AppStack.Screen name="Home" component={Home}/>
-    </AppStack.Navigator> 
-  
-
-            <Drawer.Navigator initialRouteName="Home">
-                <Drawer.Screen name="Presentation" component={Presentation} />
-                <Drawer.Screen name="StartingSearch" component={StartingSearch} />
-            </Drawer.Navigator>
-
+             >           
+           
+           <Stack.Screen name="Drawer" component={Screen1} />
+        </Stack.Navigator>
         </NavigationContainer>
     )
 }
 
 export default Routes;
+
+
