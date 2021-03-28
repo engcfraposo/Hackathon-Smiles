@@ -13,7 +13,7 @@ import Home from './pages/home';
 // import Cupons from './pages/cupons';
 
 const AppStack = createStackNavigator();
-const DrawerStack = createDrawerNavigator();
+const Drawer = createDrawerNavigator();
 
 const Routes = () =>{
     return (
