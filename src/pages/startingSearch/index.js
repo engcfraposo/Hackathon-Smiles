@@ -32,7 +32,7 @@ const Home = () => {
                         </Text>
                     </View>
                     <View style={styles.buttonContainer}>
-                        <RectButton style={styles.button} onclick={handleNavigateToRegister}>
+                        <RectButton style={styles.button}>
                             <Text style={styles.buttonText}>Iniciar</Text>
                         </RectButton>
                     </View>
