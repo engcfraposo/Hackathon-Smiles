@@ -1,3 +1,4 @@
+import { Roboto_500Medium } from '@expo-google-fonts/roboto';
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { Button, Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
@@ -14,7 +15,7 @@ const Home = () => (
     <Menu />
     <ImageBackground source={image} style={styles.image}>
         <View style={styles.textbox}>
-            <Text style={styles.textMiles}>Olá, me chamo Miles e sou sua Personal Travel. Vamos começar a planejar sua viagem dos sonhos?</Text>
+            <Text style={styles.textMiles}>Olá, me chamo <Text style={styles.textMilesBold}>Miles</Text> e sou sua <Text style={styles.textMilesBold}>Personal Travel</Text>. Vamos começar a planejar sua viagem dos sonhos?</Text>
         </View>
         <Image source={miles} style={styles.miles} />
     </ImageBackground>
@@ -38,6 +39,10 @@ const styles = StyleSheet.create({
   textMiles: {
     paddingVertical: 10,
     paddingHorizontal: 20,
+    color: '#E48040'
+  },
+  textMilesBold: {
+    fontFamily: "Roboto_500Medium",
     color: '#E48040'
   },
   image: {
