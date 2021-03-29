@@ -30,7 +30,7 @@ const StartingSearch = () => {
                         <Text style={styles.title}>
                         Quando geralmente você costuma viajar?
                         </Text>
-                        <TextInput style={styles.text} placeholder="Digite seu texto aqui"/>
+                        <TextInput style={styles.input} placeholder="Digite seu texto aqui"/>
                     </View>
                     <View style={styles.buttonContainer}>
                         <RectButton style={styles.button}>
@@ -87,28 +87,40 @@ const styles = StyleSheet.create({
         maxWidth: 260,
     },
     buttonText: {
-        color: 'white',
+        color:'#e48040',
     },
 
 
     title: {
         flex: 1,
         textAlign: 'center',
-        width: '100%',
         color: '#515151',
-        fontSize: 15,
+        fontSize: 20,
         fontFamily: 'Roboto_500Medium',
         textAlign: 'left',
         maxWidth: 260,
         marginTop: 25
     },
-    text: {
-        flex: 0.3,
+    input:{
+        flex: 1,
         textAlign: 'center',
+        width: '100%',
         color: '#AEAEAE',
         fontSize: 14,
         fontFamily: 'Roboto_400Regular',
-        maxWidth: 280,
+        maxWidth: 300,
+        backgroundColor: 'red'
+    },
+
+    text: {
+        flex: 3,
+        textAlign: 'center',
+        width: '100%',
+        color: '#AEAEAE',
+        fontSize: 14,
+        fontFamily: 'Roboto_400Regular',
+        maxWidth: 300,
+        backgroundColor: 'red'
     },
 
     description: {
@@ -126,50 +138,33 @@ const styles = StyleSheet.create({
     },
 
     img: {
-        width:300,
-        height:350,
+        width:250,
+        height:300,
     },
     background: {
         backgroundColor: '#0E0E0E',
     },
 
-    // input: {
-    //   height: 60,
-    //   backgroundColor: '#FFF',
-    //   borderRadius: 10,
-    //   marginBottom: 8,
-    //   paddingHorizontal: 24,
-    //   fontSize: 16,
-    // },
-
     button: {
         justifyContent: 'center',
-        backgroundColor: '#e48040',
+       
         height: 60,
         width: 150,
-        borderRadius: 10,
-        color: 'white',
         flexDirection: 'row',
-        overflow: 'hidden',
         alignItems: 'center',
         marginTop: 20,
     },
-
-    // buttonIcon: {
-    //     height: 60,
-    //     width: 60,
-    //     backgroundColor: 'rgba(0, 0, 0, 0.1)',
-    //     justifyContent: 'center',
-    //     alignItems: 'center'
-    // },
-
     buttonText: {
         flex: 1,
         justifyContent: 'center',
         textAlign: 'center',
-        color: '#FFF',
+        borderWidth:1,
+        borderStyle: 'solid',
+        borderColor:'#e48040',
+        color: '#e48040',
         fontFamily: 'Roboto_500Medium',
         fontSize: 14,
+        margin:5,
     }
 });
 

@@ -32,7 +32,7 @@ const Presentation = () => {
                         </Text>
                     </View>
                     <View style={styles.buttonContainer}>
-                        <RectButton style={styles.button} onclick={handleNavigateToStartingSearch}>
+                        <RectButton style={styles.button} onPress={() => handleNavigateToStartingSearch()}>
                             <Text style={styles.buttonText}>Iniciar</Text>
                         </RectButton>
                     </View>
