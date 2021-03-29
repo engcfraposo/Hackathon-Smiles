@@ -1,11 +1,11 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { Button, Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
+import { Button, Image, ImageBackground, StyleSheet, Text, TextInput, View } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import Menu from '../../components/Menu'
 
 
-const startingSearch = () => {
+const StartingSearch = () => {
 
     const navigation = useNavigation();
 
@@ -16,6 +16,10 @@ const startingSearch = () => {
     function handleNavigateToRegister() {
         navigation.navigate('Register');
     }
+    
+    function handleNavigateToBack() {
+        navigation.goBack();
+    }
 
     return (
         <>
@@ -24,12 +28,9 @@ const startingSearch = () => {
                 <View style={styles.section}>
                     <View style={styles.textContainer}>
                         <Text style={styles.title}>
-                            Para tornar sua experiência ainda mais incrível,
-                            precisamos fazer algumas perguntinhas para te conhecer melhor e estarmos cada vez mais conectados 🧡
+                        Quando geralmente você costuma viajar?
                         </Text>
-                        <Text style={styles.text}>
-                            Fique tranquilo, não vai levar mais que 2 minutos (:
-                        </Text>
+                        <TextInput style={styles.text} placeholder="Digite seu texto aqui"/>
                     </View>
                     <View style={styles.buttonContainer}>
                         <RectButton style={styles.button}>
@@ -172,4 +173,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default startingSearch;
+export default StartingSearch;
