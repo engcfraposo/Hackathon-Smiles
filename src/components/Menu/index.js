@@ -11,7 +11,7 @@ const navigation = useNavigation();
   return (
   <View style={styles.container} >
     <View style={styles.menu}>
-      <RectButton onPress={navigation.openDrawer()}>
+      <RectButton onPress={() => navigation.openDrawer()}>
       <Image styles={styles.textContainer} source={require('../../assets/right.png')} resizeMode='stretch' />
       </RectButton>
       <Image styles={styles.textContainer} source={require('../../assets/left.png')} resizeMode='stretch' />

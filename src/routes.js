@@ -22,11 +22,9 @@ const Screen1 = () => {
     return(
             
         <Drawer.Navigator initialRouteName="Home">
-    
-        <Drawer.Screen name="Home" component={Home} />
-        <Drawer.Screen name="Presentation" component={Presentation} />
-        <Stack.Screen name="StartingSearch" component={StartingSearch} />
-        
+            <Drawer.Screen name="Home" component={Home} />
+            <Drawer.Screen name="Presentation" component={Presentation} />
+            <Stack.Screen name="StartingSearch" component={StartingSearch} />
         </Drawer.Navigator>
     )
     
@@ -39,7 +37,7 @@ const Routes = () =>{
         <NavigationContainer independent={true}>
         
         <Stack.Navigator
-                initialRouteName="StartingSearch"
+                initialRouteName="Home"
                 headerMode="none"
                 screenOptions={{
                     cardStyle:{
@@ -49,6 +47,7 @@ const Routes = () =>{
              >           
            
            <Stack.Screen name="Drawer" component={Screen1} />
+           
         </Stack.Navigator>
         </NavigationContainer>
     )

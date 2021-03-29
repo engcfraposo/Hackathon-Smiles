@@ -5,7 +5,7 @@ import { RectButton } from 'react-native-gesture-handler';
 import Menu from '../../components/Menu'
 
 
-const Home = () => {
+const startingSearch = () => {
 
     const navigation = useNavigation();
 
@@ -172,4 +172,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Home;
+export default startingSearch;

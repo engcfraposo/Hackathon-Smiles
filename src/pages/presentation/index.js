@@ -14,7 +14,7 @@ const Home = () => {
     }
 
     function handleNavigateToRegister() {
-        navigation.navigate('Register');
+        navigation.navigate('startingSearch');
     }
 
     return (
