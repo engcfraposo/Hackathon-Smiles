@@ -5,7 +5,7 @@ import { RectButton } from 'react-native-gesture-handler';
 import Menu from '../../components/Menu'
 
 
-const Home = () => {
+const Presentation = () => {
 
     const navigation = useNavigation();
 
@@ -13,8 +13,8 @@ const Home = () => {
         navigation.navigate('Points');
     }
 
-    function handleNavigateToRegister() {
-        navigation.navigate('startingSearch');
+    function handleNavigateToStartingSearch() {
+        navigation.navigate('StartingSearch');
     }
 
     return (
@@ -32,7 +32,7 @@ const Home = () => {
                         </Text>
                     </View>
                     <View style={styles.buttonContainer}>
-                        <RectButton style={styles.button} onclick={handleNavigateToRegister}>
+                        <RectButton style={styles.button} onclick={handleNavigateToStartingSearch}>
                             <Text style={styles.buttonText}>Iniciar</Text>
                         </RectButton>
                     </View>
@@ -172,4 +172,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Home;
+export default Presentation;
