@@ -1,8 +1,6 @@
-import { Roboto_500Medium } from '@expo-google-fonts/roboto';
-import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { Button, Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
-import { Tooltip } from 'react-native-elements';
+
 
 import Menu from '../../components/Menu'
 
